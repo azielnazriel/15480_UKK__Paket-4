@@ -19,8 +19,8 @@ class PenawaranController extends Controller
 
         $validatedData['id_lelang_15480'] = $idLelang;
         $validatedData['id_barang_15480'] = $lelang->id_barang_15480;
-        $validatedData['id_masyarakat_15480'] = 1;
-        // $validatedData['id_masyarakat_15480'] = Auth::guard('masyarakat')->user()->id_15480;
+        // $validatedData['id_masyarakat_15480'] = 1;
+        $validatedData['id_masyarakat_15480'] = Auth::guard('masyarakat')->user()->id_15480;
 
         HistoryLelang::create($validatedData);
         return redirect()->route('home');

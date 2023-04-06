@@ -34,13 +34,13 @@
                                 @csrf
                                 <div class="form-outline mb-4">
                                     <input name="username_15480" type="username" id="username_15480"
-                                        class="form-control" value="{{ old('username_15480') }}" placeholder="Username"
+                                        class="form-control" value="{{ old('username_15480') }}" placeholder="username"
                                         style="font-size:20px;" required autofocus>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <input name="password_15480" type="password" id="password_15480"
-                                        class="form-control" placeholder="Password" style="font-size:20px;" required />
+                                        class="form-control" placeholder="password" style="font-size:20px;" required />
                                 </div>
                                 <div class="form-outline mb-4">
                                     <select name="role" class="form-control text-capitalize">
@@ -49,7 +49,7 @@
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-block mb-4 text-white"
-                                    style="background:#FBA70B; width:515px; font-size:20px;">
+                                    style="background:#FBA70B; width:595px; font-size:20px;">
                                     Login
                                 </button>
 

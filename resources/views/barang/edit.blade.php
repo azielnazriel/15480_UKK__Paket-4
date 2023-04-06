@@ -5,7 +5,8 @@
         @csrf
         @method('PUT')
 
-        <input type="hidden" name="old_gambar" value="{{ $barang->gambar_15480 }}">
+        {{-- <input type="hidden" name="old_gambar" value="{{ $barang->gambar_15480 }}"> --}}
+        <input type="hidden" name="old_gambar" value="{{ $barang->gambar_15480}}">
         <div class="mb-4">
             <label for="barang" class="form-label">Nama Barang</label>
             <input type="text" class="form-control text-dark" name="nama_barang_15480" placeholder="Masukan Barang "
@@ -52,7 +53,7 @@
         <div class="mb-4">
             <label for="foto" class="form-label">Foto</label>
             <br>
-            <img src="{{ asset('storage/' . $barang->gambar_15480) }}" class="img-fluid" alt="Image">
+            {{-- <img src="{{ asset('storage/' . $barang->gambar_15480) }}" class="img-fluid" alt="Image"> --}}
             <br>
             <input type="file" class="form-control text-dark  @error('gambar_15480') is-invalid @enderror"
                 name='gambar_15480' id="foto">

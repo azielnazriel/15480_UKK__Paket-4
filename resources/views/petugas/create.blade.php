@@ -58,5 +58,6 @@
 
         <button type="submit" class="btn text-white"
             style="background-color: #F58452; text-decoration:none; margin-left:15px;">Simpan</button>
+
     </form>
 @endsection

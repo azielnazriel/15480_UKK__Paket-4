@@ -17,6 +17,7 @@
 
 <body id="page-top">
     <div class="modal fade" id="generateLaporanModal" tabindex="-1" aria-labelledby="generateLaporanModalLabel"
+    {{-- <div class="modal fade" id="generateLaporanModal" tabindex="-1" aria-labelledby="generateLaporanModalLabel" --}}
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

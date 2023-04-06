@@ -2,7 +2,8 @@
 
 @section('content')
     <table class="table table-resposive text-center" style="font-family: 'Times New Roman', Times, serif">
-        <thead class="text-white" style="background-color: #F58452">
+        {{-- <thead class="text-white" style="background-color: #F58452"> --}}
+        <thead class="text-white" style="background-color:#F58452">
             <tr>
                 <th>Nama Masyarakat</th>
                 <th>Username</th>

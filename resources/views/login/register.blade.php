@@ -80,7 +80,7 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-block mb-4 text-white"
-                                    style="background:#FBA70B; width:515px; font-size:20px;">
+                                    style="background:#FBA70B; width:595px; font-size:20px;">
                                     Daftar
                                 </button>
 

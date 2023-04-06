@@ -1,7 +1,8 @@
 @extends('layouts.dashboard')
 
 @section('content')
-    <form action="/masyarakat/{{ $masyarakat->id_15480 }}" method="POST">
+    <form action="/masyarakat/{{ $masyarakat->id_15480 }}" method="POST"> 
+    {{-- <form action="/masyarakat/{{ $masyarakat->id_15480 }}" method="POST"> --}}
         @method('put')
         @csrf
         <input type="hidden" name="old_password" value="{{ old('username_15480', $masyarakat->password_15480) }}">

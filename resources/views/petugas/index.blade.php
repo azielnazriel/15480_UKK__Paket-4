@@ -2,7 +2,8 @@
 
 @section('content')
     <table class="table table-resposive text-center" style="font-family: 'Times New Roman', Times, serif">
-        <thead class="text-white" style="background-color: #F58452">
+        {{-- <thead class="text-white" style="background-color: #F58452"> --}}
+        <thead class="text-white" style="background-color:#F58452">
             <tr>
                 <th>Nama Petugas</th>
                 <th>Username</th>
@@ -27,6 +28,7 @@
         </tbody>
 
     </table>
+
     <a href="{{ route('petugas.create') }}" class="btn text-white"
         style="background-color: #F58452; text-decoration:none; margin-left:15px;"> Create</a>
 @endsection

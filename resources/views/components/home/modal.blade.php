@@ -72,8 +72,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="historyMenangModalLabel">History Menang
-                </h1>
+                <h4 class="modal-title fs-5" id="historyMenangModalLabel">History Menang Anda
+                </h4>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
             </div>
             <div class="modal-body row justify-content-center w-100">
@@ -82,16 +82,16 @@
                         <tr style="background-color: rgb(245, 209, 89);">
                             <td>Nama Barang</td>
                             <td>Harga</td>
-                            <td>Aksi</td>
+                            {{-- <td>Aksi</td> --}}
                         </tr>
                         @foreach ($myWinnerHistory as $item)
                             <tr>
                                 <td>{{ $item->nama_barang_15480 }}</td>
                                 <td>{{ $item->penawaran_harga_15480 }}</td>
                                 <td>
-                                    <a href="#">
+                                    {{-- <a href="#">
                                         Downlaod Invoice
-                                    </a>
+                                    </a> --}}
                                 </td>
                             </tr>
                         @endforeach

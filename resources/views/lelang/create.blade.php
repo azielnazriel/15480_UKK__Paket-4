@@ -1,7 +1,8 @@
 @extends('layouts.dashboard')
 
 @section('content')
-    <form action="{{ route('lelang.store') }}" method="POST">
+    <form action="{{ route('lelang.store')}}" method="POST">
+    {{-- <form action="{{ route('lelang.store') }}" method="POST"> --}}
         @csrf
         <div class="mb-4">
             <label for="id_barang_15480" class="form-label">Nama Barang</label>

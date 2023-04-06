@@ -1,6 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
+    {{-- <form action="/barang" method="POST" enctype="multipart/form-data"> --}}
     <form action="/barang" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-4">

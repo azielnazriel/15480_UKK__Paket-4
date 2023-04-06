@@ -2,6 +2,7 @@
 
 @section('content')
     <form action="/masyarakat" method="POST">
+    {{-- <form action="/masyarakat" method="POST"> --}}
         @csrf
         <div class="mb-4">
             <label for="nama_lengkap_15480" class="form-label">Nama Lengkap</label>

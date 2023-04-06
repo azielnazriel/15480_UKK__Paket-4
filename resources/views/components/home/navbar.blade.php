@@ -1,3 +1,11 @@
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> 
+
 <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -10,9 +18,10 @@
                         <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                         <li class="scroll-to-section"><a href="#about" class="menu-item">Barang</a></li>
                         <li>
-                            <a class="menu-item" href="#" data-toggle="modal"
+                            {{-- <a class="menu-item" href="#" data-toggle="modal"
                                 data-target="#historyMenangModal">History
-                                Menang</a>
+                                Menang</a> --}}
+                            <a class="menu-item" href="#" data-toggle="modal" data-target="#historyMenangModal">History</a>
                         </li>
                         <li>
                             <form action="{{ route('logout') }}" method="post" class="d-inline-block">

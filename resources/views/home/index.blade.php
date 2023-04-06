@@ -37,26 +37,34 @@ https://templatemo.com/tm-540-lava-landing-page
             <em style="color:rgb(245, 209, 89);">LELANGKU</em>
         </h1>
     </div>
+
+
     <section class="section" id="about">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+        <div>
+        <div class=""
             data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-            <div class="features-item">
-                @foreach ($lelang as $item)
-                    <div class="features-icon">
-                        @if ($item->barang->gambar_15480)
-                            <img src='{{ url('storage/' . $item->barang->gambar_15480) }}' alt="Image"
-                                style="margin-top: -30px">
-                        @endif
-                        <h4>{{ $item->barang->nama_barang_15480 }}</h4>
-                        <p>{{ $item->barang->deskripsi_15480 }}</p>
-                        <a class="main-button text-white" data-toggle="modal"
+            <div class="features-item ">
+                <div class="row ">
+                    @foreach ($lelang as $item) 
+                        <div class="features-icon col-md-4">
+                           
+                            @if ($item->barang->gambar_15480)
+                                <img src='{{ url('storage/' . $item->barang->gambar_15480) }}' alt="Image"
+                                style="margin-top: -30px; height:65%; width:65%;">
+                            @endif
+                            <h4>{{ $item->barang->nama_barang_15480 }}</h4>
+                            <p>{{ $item->barang->deskripsi_15480 }}</p>
+                            <a class="main-button text-white" data-toggle="modal"
                             data-target="#tawarModal{{ $item->id_15480 }}">Tawar</a>
-                        <a class="main-button text-white" data-toggle="modal"
-                            data-target="#historyModal{{ $item->id_15480 }}">History</a>
-                    </div>
-                @endforeach
+                            <a class="main-button text-white" data-toggle="modal"
+                            data-target="#historyModal{{ $item->id_15480 }}">History</a> 
+                        </div>
+                        @endforeach
+                </div>
             </div>
         </div>
+    </div>
+   
     </section>
     <!-- ***** Features Big Item End ***** -->
 
@@ -83,21 +91,8 @@ https://templatemo.com/tm-540-lava-landing-page
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p class="text-center text-white">Copyright &copy;
-                          LelangKu Website 2023
-                        | Designed by <a rel="nofollow" href="https://templatemo.com">Nazril</a></p>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </footer>
-
-    {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> --}}
-
     <!-- jQuery -->
     <script src="landingpage/js/jquery-2.1.0.min.js"></script>
 

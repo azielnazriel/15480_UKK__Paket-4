@@ -2,7 +2,8 @@
 
 @section('content')
     <table class="table table-resposive text-center" style="font-family: 'Times New Roman', Times, serif">
-        <thead class="text-white" style="background-color: #F58452">
+        {{-- <thead class="text-white" style="background-color: #F58452"> --}}
+        <thead class= "text-white" style="background-color:#F58452">
             <tr>
                 <th>tanggal lelang</th>
                 <th>harga akhir</th>
@@ -39,5 +40,5 @@
     </table>
     <a href="{{ route('lelang.create') }}" class="btn text-white"
         style="background-color: #F58452; text-decoration:none; margin-left:15px;">Create</a>
-    <a class="btn btn-primary ms-3" data-toggle="modal" data-target="#generateLaporanModal">Generate Laporan</a>
+    <a class="btn ms-3 text-white" data-toggle="modal" data-target="#generateLaporanModal" style="background-color:#FFB100;">Generate Laporan</a>
 @endsection

@@ -2,7 +2,8 @@
 
 @section('content')
     <table class="table table-resposive text-center" style="font-family: 'Times New Roman', Times, serif">
-        <thead class="text-white" style="background-color: #F58452">
+        {{-- <thead class="text-white" style="background-color: #F58452"> --}}
+        <thead class="text-white" style="background-color:#F58452;">
             <tr>
                 <th>user</th>
                 <th>penawaran</th>
@@ -23,7 +24,7 @@
                             </form>
                         @else
                             @if ($item->id_15480 == $idHistoryPemenang)
-                                <button type="button" class="btn btn-sm btn-success">Menang</button>
+                                <button type="button" class="btn btn-sm text-white" style="background-color:#57C5B6;" style="text-decoration:none;">Menang</button>
                             @else
                                 <button type="button" class="btn btn-sm btn-danger">Kalah</button>
                             @endif

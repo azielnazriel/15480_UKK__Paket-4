@@ -2,6 +2,7 @@
 
 @section('content')
     <form action="{{ route('history.store', $idLelang) }}" method="POST">
+    {{-- <form action="{{ route('history.store', $idLelang) }}" method="POST"> --}}
         @csrf
         <div class="mb-4">
             <label for="id_masyarakat_15480" class="form-label">Nama Masyarakat</label>

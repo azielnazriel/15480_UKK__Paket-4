@@ -18,6 +18,28 @@
                     </div>
                 </div>
 
+
+
+                {{-- <section class="section" id="about">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <div class="feature-item">
+                            @foreach($lelang as $item)
+                            @if ($item->barang->gambar_15480)
+                            <img src="{{url('storage/ . $item->barang->gambar_15480')}}" alt="Image" style="margin-top: -30px">
+                            @endif
+                            <h4>{{ $item->barang->nama_barang_15480 }}</h4>
+                            <p> {{ $item->barang->deskripsi_15480}} </p>
+                        </div>
+                        @endforeach
+                    </div>
+
+                </section> --}}
+
+
+
+
+
                 {{-- <section class="section" id="about">
                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">

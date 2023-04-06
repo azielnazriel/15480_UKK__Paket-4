@@ -17,7 +17,9 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#F25751;">
+        <ul class="navbar-nav sidebar sidebar-dark according" id="accordionSidebar" style=" background-color:#F25751;">
+        {{-- <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#F25751;"> --}}
+           
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
